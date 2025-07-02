@@ -1,0 +1,174 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stars de l'éco</title>
+  <style>
+    @font-face {
+      font-family: 'Horizon';
+      src: url('Horizon.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'Montserrat';
+      src: url('Montserrat-Bold.ttf') format('truetype');
+      font-weight: bold;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      font-family: 'Horizon', sans-serif;
+      animation: fadeIn 2s ease;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .logo {
+      width: 250px;
+      margin: 0 auto;
+      animation: fadeIn 3s ease;
+    }
+
+    .slogan {
+      position: relative;
+      font-size: 1.5em;
+      margin-top: 15px;
+      margin-left: -10px;
+      color: #FFD700;
+      text-align: center;
+      animation: glitchText 2.5s infinite;
+    }
+
+    @keyframes glitchText {
+      0% { text-shadow: 1px 0 #fff, -1px 0 #FFD700; }
+      20% { text-shadow: -1px 0 #fff, 1px 0 #FFD700; }
+      40% { text-shadow: 1px 0 #FFD700, -1px 0 #fff; }
+      60% { text-shadow: 0 0 2px #FFD700; }
+      80% { text-shadow: 1px 0 #fff, -1px 0 #FFD700; }
+      100% { text-shadow: -1px 0 #fff, 1px 0 #FFD700; }
+    }
+
+    .emojis {
+      font-size: 1.5em;
+      color: white;
+      text-align: center;
+      margin-top: 5px;
+      letter-spacing: 10px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center; /* Centrer les éléments */
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .menu a {
+      color: #FFD700;
+      text-decoration: none;
+      font-size: 1.2em;
+      padding: 10px 25px;
+      border: 2px solid #FFD700;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #FFD700;
+      color: black;
+    }
+
+    .bandeau {
+      width: 600px;
+      height: auto;
+      border: 2px solid #FFD700;
+      border-radius: 25px;
+      margin: 40px auto 0;
+      color: white;
+      font-size: 1em;
+      text-align: left;
+      line-height: 1.6em;
+      padding: 25px;
+      background-color: #111;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    footer {
+      text-align: center;
+      color: #FFD700;
+      margin-top: 40px;
+      font-size: 0.9em;
+      font-family: 'Horizon', sans-serif;
+    }
+
+    /* Barre réseaux sociaux verticale et discrète */
+    .fixed-social {
+      position: fixed;
+      bottom: 40px;
+      right: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 1000;
+    }
+
+    .fixed-social a img {
+      width: 45px;
+      height: 45px;
+      opacity: 0.4;
+      transition: opacity 0.4s ease, transform 0.3s ease;
+      filter: grayscale(30%);
+    }
+
+    .fixed-social a:hover img {
+      opacity: 1;
+      transform: scale(1.2);
+      filter: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="Logo.jpg" alt="Logo Stars de l'éco" class="logo" />
+
+  <div class="slogan">Ta parole vaut de l'or. Utilise-la.</div>
+  <div class="emojis">🎤 ⚖️ 🏦</div>
+
+  <div class="menu">
+    <a href="concours.html">Concours</a>
+    <a href="nouscontacter.html">Nous contacter</a>
+  </div>
+
+  <div class="bandeau">
+    Notre mission ? Rendre l’économie accessible, passionnante et utile à tous, en décryptant l’actualité et les mécanismes financiers dans un langage simple, clair, et sans jargon. Parce que comprendre l’économie, c’est mieux maîtriser son avenir.
+  </div>
+
+  <footer>
+    ©starsdeleco
+  </footer>
+
+  <div class="fixed-social">
+    <a href="https://www.tiktok.com/@starsofeco" target="_blank" rel="noopener noreferrer">
+      <img src="tiktok.png" alt="TikTok" />
+    </a>
+    <a href="https://www.instagram.com/starsofeco/#" target="_blank" rel="noopener noreferrer">
+      <img src="instagram.png" alt="Instagram" />
+    </a>
+    <a href="https://www.youtube.com/@starsdeleco" target="_blank" rel="noopener noreferrer">
+      <img src="youtube.png" alt="YouTube" />
+    </a>
+  </div>
+
+</body>
+</html>

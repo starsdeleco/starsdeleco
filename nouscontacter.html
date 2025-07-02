@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactez l'équipe de Stars de l'éco pour toute collaboration ou question." />
+  <title>Nous contacter - Stars de l'éco</title>
+  <style>
+    @font-face {
+      font-family: 'Horizon';
+      src: url('Horizon.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Montserrat';
+      src: url('montserrat/Montserrat-Bold.woff2') format('woff2'),
+           url('montserrat/Montserrat-Bold.woff') format('woff');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      font-family: 'Horizon', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 3s ease-in-out;
+    }
+
+    body.visible {
+      opacity: 1;
+    }
+
+    h1 {
+      color: #FFD700;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .contact-box {
+      border: 2px solid #FFD700;
+      border-radius: 25px;
+      padding: 30px 40px;
+      max-width: 400px;
+      text-align: center;
+      background-color: #111;
+      font-size: 1.2em;
+      line-height: 1.5;
+      font-family: 'Horizon', sans-serif;
+    }
+
+    .contact-box a {
+      color: white;
+      text-decoration: underline;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .social-logos {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-logos a img {
+      opacity: 0.6;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      filter: grayscale(40%);
+    }
+
+    .social-logos a img.tiktok {
+      width: 42px;
+      height: 38px;
+    }
+
+    .social-logos a img:not(.tiktok) {
+      width: 35px;
+      height: 35px;
+    }
+
+    .social-logos a:hover img {
+      opacity: 1;
+      transform: scale(1.2);
+      filter: none;
+    }
+
+    nav {
+      margin-bottom: 50px;
+      width: 100%;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 0;
+      margin: 0 0 40px 0;
+    }
+
+    nav ul li a {
+      color: #FFD700;
+      text-decoration: none;
+      font-size: 1.3em;
+      font-weight: bold;
+      font-family: 'Horizon', sans-serif;
+      padding: 8px 15px;
+      border-radius: 15px;
+      border: 2px solid transparent;
+      transition: border-color 0.3s, background-color 0.3s;
+    }
+
+    nav ul li a:hover {
+      border-color: #FFD700;
+      background-color: #222;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 15px 0;
+      color: #FFD700;
+      font-family: 'Horizon', sans-serif;
+      font-size: 1em;
+      text-align: center;
+      border-top: 1px solid #444;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu -->
+  <nav>
+    <ul>
+      <li><a href="concours.html">Concours</a></li>
+      <li><a href="index.html">Accueil</a></li>
+    </ul>
+  </nav>
+
+  <h1>Contactez-nous</h1>
+
+  <div class="contact-box">
+    Envoie-nous un e-mail à :<br />
+    <strong><a href="mailto:starsdeleconomie@gmail.com">starsdeleconomie@gmail.com</a></strong><br /><br />
+    
+    📱 <strong>Retrouvez-nous sur les réseaux sociaux :</strong>
+    
+    <div class="social-logos">
+      <a href="https://www.tiktok.com/@starsofeco" target="_blank" rel="noopener noreferrer">
+        <img src="tiktok.png" alt="TikTok" class="tiktok" />
+      </a>
+      <a href="https://www.instagram.com/starsofeco/" target="_blank" rel="noopener noreferrer">
+        <img src="instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://www.youtube.com/@starsdeleco" target="_blank" rel="noopener noreferrer">
+        <img src="youtube.png" alt="YouTube" />
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    © Stars de l'éco
+  </footer>
+
+  <script>
+    // Apparition automatique au chargement
+    window.onload = () => {
+      document.body.classList.add('visible');
+    };
+  </script>
+</body>
+</html>
