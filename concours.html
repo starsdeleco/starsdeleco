@@ -1,3 +1,4 @@
+Vous avez dit :
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -113,7 +114,7 @@
     .content {
       position: relative;
       max-width: 800px;
-      margin: 0 auto 50px auto;
+      margin: 0 auto;
       font-family: 'Montserrat', sans-serif;
       font-weight: normal;
       font-size: 1.1em;
@@ -156,6 +157,7 @@
     footer {
       text-align: center;
       color: #FFD700;
+      margin-top: 50px;
       font-size: 0.9em;
       font-family: 'Horizon', sans-serif;
     }
@@ -170,8 +172,6 @@
       display: flex;
       justify-content: center;
       gap: 20px;
-      position: relative;
-      z-index: 1;
     }
 
     .social-logos img {
@@ -195,76 +195,6 @@
       width: 35px;
       height: 35px;
     }
-
-    /* Styles du formulaire d'inscription */
-    form.inscription-form {
-      background-color: #222;
-      padding: 25px;
-      border-radius: 20px;
-      border: 2px solid #FFD700;
-      max-width: 500px;
-      margin: 40px auto 0 auto;
-      font-family: 'Montserrat', sans-serif;
-      color: white;
-      position: relative;
-      z-index: 1;
-    }
-
-    form.inscription-form h2 {
-      text-align: center;
-      color: #FFD700;
-      margin-bottom: 25px;
-      font-weight: bold;
-      letter-spacing: 0.05em;
-    }
-
-    form.inscription-form label {
-      display: block;
-      margin-top: 15px;
-      margin-bottom: 6px;
-      font-weight: 600;
-      color: #FFD700;
-    }
-
-    form.inscription-form input[type="text"],
-    form.inscription-form input[type="email"],
-    form.inscription-form input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      border-radius: 8px;
-      border: none;
-      outline: none;
-      font-size: 1em;
-      box-sizing: border-box;
-      background-color: #111;
-      color: white;
-      transition: box-shadow 0.3s ease;
-    }
-
-    form.inscription-form input[type="text"]:focus,
-    form.inscription-form input[type="email"]:focus,
-    form.inscription-form input[type="password"]:focus {
-      box-shadow: 0 0 8px #FFD700;
-      background-color: #222;
-    }
-
-    form.inscription-form button[type="submit"] {
-      margin-top: 25px;
-      width: 100%;
-      padding: 12px;
-      font-size: 1.1em;
-      background-color: #FFD700;
-      border: none;
-      border-radius: 12px;
-      color: #121212;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    form.inscription-form button[type="submit"]:hover {
-      background-color: #e6c200;
-    }
   </style>
 </head>
 <body>
@@ -272,55 +202,51 @@
   <!-- Navigation -->
   <nav>
     <a href="index.html">Accueil</a>
-    <a href="articles.html">Articles</a>
-    <a href="abonnement.html">Abonnement</a>
-    <a href="contact.html">Contact</a>
+    <a href="nouscontacter.html">Nous contacter</a>
   </nav>
 
-  <!-- Titre -->
-  <h1 data-text="Stars de l'éco">Stars de l'éco</h1>
+  <h1 data-text="Les Stars de l’Éco : le concours">Les Stars de l’Éco : le concours</h1>
 
-  <!-- Contenu principal -->
   <div class="content">
-    <p>
-      Bonjour, bienvenue sur Stars de l'éco ! Ce site est dédié à l'économie et à ses acteurs majeurs.  
-      Ici, vous pouvez lire des articles, vous abonner à la newsletter, et nous contacter.  
-      Suivez-nous aussi sur nos réseaux sociaux.
+    <p><span class="highlight">Prendre la parole, prendre sa place.</span></p>
+
+    <p>Parce que la parole est un pouvoir, nous lançons un concours d’éloquence inédit, ouvert aux étudiants de 18 à 35 ans.</p>
+
+    <p><span class="highlight">Notre objectif</span> : leur donner l’opportunité de s’exprimer, de prendre confiance en eux, et de dénicher des talents souvent invisibles dans les débats publics et économiques.</p>
+
+    <p>À travers ce concours, les participants prendront la parole sur des grands thèmes économiques, partageront leurs réflexions, leurs rêves, leurs colères et leurs idées.</p>
+
+    <p>En parallèle, nous produisons une série de mini-formats inspirants sur les réseaux sociaux, où des experts en management et développement personnel livrent des conseils concrets pour développer son leadership, oser s’exprimer, et affirmer sa valeur – même quand tout semble contre nous.</p>
+
+    <p><span class="highlight">Tu es étudiant ?</span><br>
+    Ce concours est pour toi. Tu as des choses à dire, sur l’économie, le business, le monde de la finance, les cryptomonnaies… nous voulons les entendre.</p>
+
+    <p><span class="highlight">Vous êtes une structure ou une entreprise ?</span><br>
+    Soutenez ce projet. En devenant partenaire, vous contribuez à l’inclusion, à l’éducation citoyenne, et à l’égalité des chances.</p>
+
+    <p><span class="highlight">Ensemble, faisons de la parole un levier d’émancipation.</span></p>
+
+    <p><span class="highlight">Comment participer ?</span><br>
+    Envoie-nous un e-mail à 
+    <a href="mailto:starsdeleconomie@gmail.com" style="color: white; text-decoration: underline;">starsdeleconomie@gmail.com</a><br>
+    Et abonne-toi à nos réseaux sociaux !
     </p>
 
     <div class="social-logos">
-      <a href="https://www.tiktok.com/@starsdeleco" target="_blank" rel="noopener noreferrer">
-        <img src="TikTok_Logo.svg" alt="TikTok Logo" class="tiktok" />
+      <a href="https://www.tiktok.com/@starsofeco" target="_blank" rel="noopener noreferrer">
+        <img src="tiktok.png" alt="TikTok" class="tiktok" />
       </a>
-      <a href="https://www.linkedin.com/company/starsdeleco" target="_blank" rel="noopener noreferrer">
-        <img src="Linkedin_Logo.svg" alt="LinkedIn Logo" class="icon" />
+      <a href="https://www.instagram.com/starsofeco/" target="_blank" rel="noopener noreferrer">
+        <img src="instagram.png" alt="Instagram" class="icon" />
       </a>
-      <a href="https://twitter.com/starsdeleco" target="_blank" rel="noopener noreferrer">
-        <img src="Twitter_Logo.svg" alt="Twitter Logo" class="icon" />
+      <a href="https://www.youtube.com/@starsdeleco" target="_blank" rel="noopener noreferrer">
+        <img src="youtube.png" alt="YouTube" class="icon" />
       </a>
     </div>
-
-    <!-- Formulaire d'inscription -->
-    <form class="inscription-form" action="/submit-inscription" method="POST" novalidate>
-      <h2>Inscription à la newsletter</h2>
-
-      <label for="nom">Nom complet</label>
-      <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required />
-
-      <label for="email">Adresse e-mail</label>
-      <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required />
-
-      <label for="motdepasse">Mot de passe</label>
-      <input type="password" id="motdepasse" name="motdepasse" placeholder="Votre mot de passe" required minlength="6" />
-
-      <button type="submit">S'inscrire</button>
-    </form>
-
   </div>
 
-  <!-- Pied de page -->
   <footer>
-    &copy; 2025 Stars de l'éco — Tous droits réservés.
+    © Stars de l'éco
   </footer>
 
 </body>
